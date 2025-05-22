@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+    <head>
+        <title>form1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+    </head>
+    <body>
+        <h1 style="background-color: lightpink" align="center">ADMISSION FORM</h1>
+        <form style="background-color: mistyrose" action=display_form1.php method="POST">
+            <label><b>Name:</b></label>
+            <input type="text" name="fn" placeholder="First Name">
+            <input type="text" name="mn" placeholder="Middle Name">
+            <input type="text" name="ln" placeholder="Last Name">
+            <br><br>
+            
+            <label><b>Date Of Birth:</b></label>
+            <input type="date" name="dob">
+            <br><br>
+            
+            <label><b>Gender:</b></label>
+            <input type="radio" name="opt" value="male">Male
+            <input type="radio" name="opt" value="female">Female
+            <br><br>
+            
+            <b>Address:</b>
+            <textarea id="address" placeholder="Address Here" name="add" rows="2" cols="40"></textarea>
+            <br><br>
+            
+            <b>Education Qualification:</b>
+            <select id="edu" name="eq">
+                <option value="null">NULL</option>
+                <option value="SSC">SSC</option>
+                <option value="HSC">HSC</option>
+                <option value="graduation">GRADUATION</option>
+            </select>
+            <br><br>
+            
+            <label><b>Contact No:</b></label>
+            <input type="tel" name="contact" placeholder="91-**********" pattern="[0-9]{2}[0-9]{10}">
+            <br><br>
+            
+            <label><b>Email ID:</b></label>
+            <input type="email" name="eml" placeholder="example@gmail.com">
+            <br><br>
+            
+            
+            <label><b>Height:</b></label>
+            <input type="number" name="height" min="1" max="200">
+            <select name="hei">
+                <option value="Inches">Inches</option>
+                <option value="CM">Cm</option>
+            </select>
+            <br><br>
+            
+            <label><b>Weight:</b></label>
+            <input type="number" name="weight" min="1" max="200">
+            <select name="wei">
+                <option value="KGS">KGS</option>
+                <option value="LBS">LBS</option>
+            </select>
+            <br><br> 
+            
+            <b>Hobbies:</b>
+            <br>
+            <input type="checkbox" name="hob" value="Sports">Sports
+            <input type="checkbox" name="hob" value="Conding">Coding
+            <br><br>             
+            <input type="checkbox" name="hob" value="Reading">Reading
+            <input type="checkbox" name="hob" value="Networks">Networks
+            <br><br> 
+            
+            <b>College:</b>
+            <select name="col">
+                <option>Hinduja College</option>
+                <option>NL College</option>
+                <option>Saraf College</option>
+                <option>R.D Nationals College</option>
+                <option>K.E.S College</option>               
+            </select>
+            <br><br> 
+            
+            <b>Aadhar Number:</b>
+            <input type="tel" name="adn" placeholder="">
+            <br><br> 
+            
+            <b>Passport Number:</b>
+            <input type="text" name="pn" placeholder="" pattern="[A-Z][0-9]{7}">
+            <br><br> 
+            
+            <table border="3px">
+                <tr>
+                    <th>Exam Year</th>
+                    <th>Exam Name</th>
+                    <th>Percentage</th>
+                    <th>Class</th>
+                </tr>
+                <tr>
+                    <td><input type="text" name="ey" placeholder="ex:-2025"></td>
+                    <td><input type="text" name="en" placeholder="subject/course"></td>
+                    <td><input type="text" name="per" placeholder="99.99"></td>
+                    <td><input type="text" name="class" placeholder="F.Y.Bsc-IT"></td>
+                </tr>
+            </table>
+            <br><br><!-- comment -->
+            
+            <input type="button" value="clear">
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </form>
+
+    </body>
+</html>
