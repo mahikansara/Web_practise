@@ -91,6 +91,21 @@
                 <th>Arrays</th>
                 <th><a href="array.php">Arrays</a></th>
             </tr>
+            <tr>
+                <th>Basic Syntax</th>
+                <th>Functions</th>
+                <th><a href="function.php">Functions</a></th>
+            </tr>
+            <tr>
+                <th>Basic Syntax</th>
+                <th>Type Casting</th>
+                <th><a href="type_casting.php">Type Casting</a></th>
+            </tr>
+            <tr>
+                <th>Basic Syntax</th>
+                <th>Type Juggling</th>
+                <th><a href="type_juggling.php">Type Juggling</a></th>
+            </tr>
         </table>
         
         
