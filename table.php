@@ -106,6 +106,23 @@
                 <th>Type Juggling</th>
                 <th><a href="type_juggling.php">Type Juggling</a></th>
             </tr>
+            <tr>
+                <th>Basic Syntax</th>
+                <th>Multi Dimensional Array</th>
+                <th><a href="multidimensional_array.php">Multi Dimensional</a></th>
+            </tr>
+            <tr>
+                <th>Basic Syntax</th>
+                <th>String Handling</th>
+                <th><a href="sting_handling.php">String Handling</a></th>
+            </tr>
+            <tr>
+                <th>Basic Syntax</th>
+                <th>Class</th>
+                <th><a href="class.php">Class</a></th>
+                <th><a href="class2.php">Class2</a></th>
+                                
+            </tr>
         </table>
         
         
