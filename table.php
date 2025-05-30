@@ -10,6 +10,8 @@
                 <th>Sub topic</th>
                 <th>Link 1</th>
                 <th>Link 2</th>    
+                <th>Link 3</th> 
+                <th>Link 4</th>
             </tr>
             <tr>
                 <th>Basic syntax</th>
@@ -122,6 +124,60 @@
                 <th><a href="class.php">Class</a></th>
                 <th><a href="class2.php">Class2</a></th>
                                 
+            </tr>
+            <tr>
+                <th>Basic Syntax</th>
+                <th>Constants</th>
+                <th><a href="constants.php">Constants</a></th>
+            </tr>
+            <tr>
+                <th>Basic Syntax</th>
+                <th>Magic Constants</th>
+                <th><a href="magic_constants.php">Magic constants</a></th>
+            </tr>
+            <tr>
+                <th>Basic Syntax</th>
+                <th>String Handling</th>
+                <th><a href="sting_handling.php">String Handling</a></th>
+            </tr>
+            <tr>
+                <th>Basic Syntax</th>
+                <th>If Else</th>
+                <th><a href="if_else.php">If else</a></th>
+                <th><a href="elseif.php">Else if</a></th>
+                <th><a href="nested_ifelse.php">Nested If else</a></th>
+                <th><a href="shorthand_if.php">Shorthand If</a></th>
+                <th><a href="ifoperators.php">Operators</a></th>
+            </tr>
+            <tr>
+                <th>Basic Syntax</th>
+                <th>Switch</th>
+                <th><a href="switch.php">Switch</a></th>
+                <th><a href="default_case.php">Switch Default</a></th>
+                <th><a href="common_code_blocks_switch.php">Switch common code</a></th>
+            </tr>
+            <tr>
+                <th>Basic Syntax</th>
+                <th>While</th>
+                <th><a href="while.php">While</a></th>
+            </tr>
+            <tr>
+                <th>Basic Syntax</th>
+                <th>Do While</th>
+                <th><a href="do_while.php">Do While</a></th>
+            </tr>
+            <tr>
+                <th>Basic Syntax</th>
+                <th>For</th>
+                <th><a href="for.php">For</a></th>
+            </tr>
+            <tr>
+                <th>Basic Syntax</th>
+                <th>For Each</th>
+                <th><a href="foreach.php">For Each</a></th>
+                <th><a href="foreach1.php">For Each 1</a></th>
+                <th><a href="foreach2.php">For Each 2</a></th>
+                <th><a href="foreach3.php">For Each 3</a></th>
             </tr>
         </table>
         
