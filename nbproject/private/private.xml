@@ -3,32 +3,25 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/regex_preg_replace.php</file>
             <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/math_abs.php</file>
-            <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/string_handling.php</file>
-            <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/math_round.php</file>
-            <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/nested_ifelse.php</file>
+            <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/superglobals.php</file>
+            <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/opticalearn.php</file>
             <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/shorthand_if.php</file>
-            <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/multiple_spead_op.php</file>
             <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/math_pow.php</file>
-            <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/array_link_function.php</file>
             <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/asort.php</file>
             <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/math_ceil.php</file>
             <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/math_floor.php</file>
-            <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/math_intdiv.php</file>
             <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/function.php</file>
             <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/rsort.php</file>
-            <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/magic_constants.php</file>
-            <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/null_coalescing1.php</file>
             <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/math_sqrt.php</file>
             <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/sort_array.php</file>
             <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/math_max.php</file>
             <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/foreach1.php</file>
-            <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/arsort.php</file>
             <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/null_coalescing.php</file>
             <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/math_min.php</file>
+            <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/submitserver.php</file>
             <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/for.php</file>
-            <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/school_array.php</file>
-            <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/table.php</file>
             <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/if_else.php</file>
             <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/krsort.php</file>
             <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/elseif.php</file>
@@ -36,18 +29,32 @@
             <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/foreach2.php</file>
             <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/do_while.php</file>
             <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/common_code_blocks_switch.php</file>
-            <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/spread_operator.php</file>
             <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/class.php</file>
             <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/default_case.php</file>
-            <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/ksort.php</file>
             <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/array_functions.php</file>
-            <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/constants.php</file>
-            <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/switch.php</file>
             <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/foreach3.php</file>
             <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/named_arguments_so.php</file>
             <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/ifoperators.php</file>
-            <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/array_merge.php</file>
             <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/while.php</file>
+            <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/string_handling.php</file>
+            <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/math_round.php</file>
+            <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/nested_ifelse.php</file>
+            <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/multiple_spead_op.php</file>
+            <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/array_link_function.php</file>
+            <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/math_intdiv.php</file>
+            <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/magic_constants.php</file>
+            <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/null_coalescing1.php</file>
+            <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/arsort.php</file>
+            <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/result_calc.php</file>
+            <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/school_array.php</file>
+            <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/table.php</file>
+            <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/regex_preg_match.php</file>
+            <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/spread_operator.php</file>
+            <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/regex_preg_match_all.php</file>
+            <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/ksort.php</file>
+            <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/constants.php</file>
+            <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/switch.php</file>
+            <file>file:/Users/mahikansara/NetBeansProjects/sample/Web_practise/array_merge.php</file>
         </group>
     </open-files>
 </project-private>
