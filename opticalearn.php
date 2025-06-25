@@ -2,53 +2,147 @@
 <!doctype html>
 <html>
     <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+        
         <title>opticalearn</title>
         <style>
             .container{
-                max-width: 500px;
-                margin: 40px auto;
-                background: darkviolet;
-                padding: 30px;
-                box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-                border-radius: 8px;
-
+                margin: 100px auto;
+                background: linear-gradient(30deg, deeppink, pink);
+                max-width: 700px;
+                padding: 50px;
+                box-shadow: 5px 5px 8px black;
+                
             }
 
+            @media (min-width: 576px) and (max-width: 992px)
+            {
+                .flex-container{
+                    flex-direction: column;
+                    
+                }
+                
+                .flex-row{
+                    display: flex;
+                    flex-direction: row;
+                }
+                .md_ad_form{
+                    margin: 20px 20px 20px 0px;
+                    
+                }
+
+                .mb_ad_form{
+                    margin-bottom: 20px;
+                    
+                }
+
+                div+input{
+                    width: 100px;
+                    border: 100px;
+                }
+                
+                .widt{
+                    width: 100%;
+                }
+                
+                
+                }
+
+            
+
+            @media (min-width: 425px) and (max-width: 575px)
+            {
+               .widt
+               {
+                   width: 100%;
+               }
+               
+               .md_ad_form{
+                    margin: 20px 20px 20px 0px;
+                    
+                }
+
+                .mb_ad_form{
+                    margin-bottom: 20px;
+                    
+                }
+            }
+            
+            @
+            
+            
+            input{
+                outline: none;
+            }
+            
+            body{
+                background: linear-gradient(45deg, pink, deeppink);
+            }
+            
+            input::placeholder{
+                color: black;
+            }
+            
             h2{
-                text-align: center;
-                border: 3px solid black;
-                border-radius: 7px;
-            }
+                    overflow: hidden;
+                    
+                }
+            
+            
 
-            button{
-                border: 2px;
-                border-radius: 10px;
-                display: block;
-                margin: auto;
-
-            }
-
-            .error{
-                color: red;
-                font-size: 0.9rem;
-                display: none;
-            }
         </style>
     </head>
-    <body bgcolor="#CF9FFF">
-        <div class="container">
-            <h2>Admission Form</h2>
-            <form id="adform" class="underline-input" onsubmit="return checkform();">
+    <body bgcolor="#a83264">
 
-                <div><input type="text" id="fsn" name="fname" placeholder="First Name">
-                    <input type="text" id="mdn" name="mname" placeholder="Middle Name">
-                    <input type="text" id="lsn" name="fname" placeholder="Last Name">
-                    <input type="number" id="no" name="no" placeholder="Enter mobile no"><br><br>
-                    <input type="text" id="em" name="em" placeholder=" Enter email address">
-                    <label>Select Gender:</label><pre> 
-                    <input type="radio" name="opt" value="male">Male <input type="radio" name="opt" value="female">Female <input type="radio" name="opt" value="other">Other</pre><br>
-                    <label>Education:</label>
-                    <select id="edu" name="education" required>
+        <form class="container" id="adform" onsubmit="return checkform();">
+            <div class="text-center">
+                <h2  class="display-5 border border-5 border-dark rounded-pill bg-white">Admission Form</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-3">
+                    <input class="flex-container md_ad_form border-top-0 border-start-0 border-end-0 col-sm-12 bg-transparent widt" type="text" id="fsn" name="fname " placeholder="First Name">
+                </div>
+
+                <div class="col-sm-3">
+                    <input class="flex-container md_ad_form border-top-0 border-start-0 border-end-0 col-sm-12 bg-transparent widt" type="text" id="mdn" name="mname" placeholder="Middle Name">
+                </div>
+
+                <div class="col-sm-3">
+                    <input class="flex-container md_ad_form border-top-0 border-start-0 border-end-0 col-sm-12 bg-transparent widt" type="text" id="lsn" name="fname" placeholder="Last Name">
+                </div>
+
+                <div class="col-sm-3">
+                    <input class="flex-container md_ad_form border-top-0 border-start-0 border-end-0 col-sm-12 bg-transparent widt" type="number" id="no" name="no" placeholder="Enter mobile no">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="flex-row col-sm-6"> 
+                    <input class="mt-3 col-sm-12 md_ad_form border-top-0 border-start-0 border-end-0 bg-transparent widt" type="text" id="em" name="em" placeholder=" Enter email address"><!--  -->
+                </div>
+                <div class="mt-3 col-sm-6">Select Gender:
+                    <br>
+                    <span class="col-sm-1 mt-3 me-3">
+                    <input type="radio" name="opt" value="male">Male
+                    </span>
+                    
+                    <span class="col-sm-1 mt-3 me-3">
+                    <input type="radio" name="opt" value="female">Female
+                    </span>
+                    
+                    <span class="col-sm-1 mt-3 me-3">
+                    <input type="radio" name="opt" value="other">Other
+                    </span>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-lg-3 ">
+                    <span class="mt-3 col-lg-12 auto">Education:</span><br>
+
+                    <select id="edu" name="education"  class="col-sm-12 mb_ad_form bg-transparent widt" required>
                         <option value="Education">Education</option>
                         <option value="SSC">SSC</option>
                         <option value="HSC">HSC</option>
@@ -57,9 +151,13 @@
                         <option value="Education">Education</option>
                         <option value="Post">Post Graduation</option>
                     </select>
+                </div>
 
-                    <label>Language:</label>
-                    <select id="lan" name="language" required>
+
+                <div class="col-lg-3 ">
+                    <span class="mt-3 col-lg-12">Language:</span><br>
+
+                    <select id="lan" name="language"  class="col-sm-12 bg-transparent mb_ad_form widt" required>
                         <option value="Language">Language</option>
                         <option value="Marathi">Marathi</option>
                         <option value="Hindi">Hindi</option>
@@ -67,34 +165,74 @@
                         <option value="English">English</option>
                         <option value="Others">Others</option>
                     </select>
+                </div>
 
-                    <label>Percentage:</label>
-                    <select id="per" name="percentage" required>
+
+                <div class="col-lg-3">
+                    <span class="mt-3 col-lg-12">Percentage:</span><br>
+                    <select id="per" name="percentage" class="col-sm-12 bg-transparent mb_ad_form widt" required>
                         <?php
                         for ($i = 1; $i <= 100; $i++) {
                             echo '<option value="$i">' . $i . '</option>';
                         }
                         ?>
                     </select>
+                </div>
 
-                    <label>Pass Year:</label>
-                    <select id="pas" name="pass" required>
-<?php
-for ($i = 1800; $i <= 2024; $i++) {
-    echo '<option value="$i">' . $i . '</option>';
-}
-?>
-                    </select><br><br><!-- comment -->
-                    <input type="text" id="wing" name="wing" placeholder="Wing/Flat No">
-                    <input type="text" id="bldg" name="bldg" placeholder="Building/Society">
-                    <input type="text" id="area" name="area" placeholder="Area">
-                    <input type="text" id="city" name="city" placeholder="City"><br><br>
-                    <input type="text" id="landmark" name="landmark" placeholder="Landmark">
-                    <input type="text" id="pin" name="pin" placeholder="Enter PIN code"><br><br><!-- comment -->
-                    <label>Date of Birth:</label>
-                    <input type="date" name="dob" required>
-                    <label>Blood Group:</label>
-                    <select id="bg" name="bg" required>
+
+                <div class="col-lg-3">
+                    <span class="mt-3 col-lg-12">Pass Year:</span><br>
+                    <select id="pas" name="pass" class="col-sm-12 bg-transparent mb_ad_form widt" required>
+                        <?php
+                        for ($i = 1800; $i <= 2024; $i++) {
+                            echo '<option value="$i">' . $i . '</option>';
+                        }
+                        ?>
+                    </select>
+                </div>
+
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-sm-3">
+                    <input class="flex-container md_ad_form border-top-0 border-start-0 border-end-0 col-sm-12 bg-transparent mt-3 widt" type="text" id="wing" name="wing" placeholder="Wing/Flat No">
+                </div>
+
+                <div class="col-sm-3">
+                    <input class="flex-container md_ad_form border-top-0 border-start-0 border-end-0 col-sm-12 bg-transparent mt-3 widt" type="text" id="bldg" name="bldg" placeholder="Building/Society">
+                </div>
+
+                <div class="col-sm-3">
+                    <input class="flex-container md_ad_form border-top-0 border-start-0 border-end-0 col-sm-12 bg-transparent mt-3 widt" type="text" id="area" name="area" placeholder="Area">
+                </div>
+
+                <div class="col-sm-3">
+                    <input class="flex-container md_ad_form border-top-0 border-start-0 border-end-0 col-sm-12 bg-transparent mt-3 widt" type="text" id="city" name="city" placeholder="City">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="flex-row col-sm-6">
+                    <input class="col-sm-12 mt-3 md_ad_form border-top-0 border-start-0 border-end-0 bg-transparent grid widt" type="text" id="landmark" name="landmark" placeholder="Landmark"><!-- comment -->
+                </div>
+
+                <div class="flex-row col-sm-6">
+                    <input class="col-sm-12 mt-3 md_ad_form border-top-0 border-start-0 border-end-0 bg-transparent grid widt" type="text" id="pin" name="pin" placeholder="Enter PIN code">
+                </div>
+            </div><!-- comment -->
+
+            <div class="row mt-3">
+
+                <div class="col-lg-3">
+                    <span class="col-lg-12 mt-3">Date of Birth:</span><br>
+                    <input class="col-sm-12 border-top-0 border-start-0 border-end-0 bg-transparent mb_ad_form widt" type="date" name="dob" required>
+                </div>
+
+                <div class="col-lg-3">
+                    <span class="col-lg-12 mt-3">Blood Group:</span><br>
+                    <select class="col-sm-12 bg-transparent mb_ad_form widt" id="bg" name="bg" required>
                         <option value="a+">A+</option>
                         <option value="a-">A-</option>
                         <option value="b+">B+</option>
@@ -104,13 +242,19 @@ for ($i = 1800; $i <= 2024; $i++) {
                         <option value="o+">O+</option>
                         <option value="o-">O-</option>
                     </select>
-                    <label>Country:</label>
-                    <select id="con" name="coun" required>
+                </div>
+
+                <div class="col-lg-3">
+                    <span class="col-lg-12 mt-3">Country:</span><br>
+                    <select class="col-sm-12 bg-transparent mb_ad_form widt" id="con" name="coun" required>
                         <option value="coun">Country</option>
                         <option value="india">India</option>
                     </select>
-                    <label>State:</label>
-                    <select id="state" name="state" required>
+                </div>
+
+                <div class="col-lg-3">
+                    <span class="col-lg-12 mt-3">State:</span><br>
+                    <select class="col-sm-12 bg-transparent mb_ad_form widt" id="state" name="state" required>
                         <option>Andhra Pradesh</option>
                         <option>Arunachal Pradesh</option>
                         <option>Assam</option>
@@ -140,57 +284,29 @@ for ($i = 1800; $i <= 2024; $i++) {
                         <option>Uttrakhand</option>
                         <option>Uttar Pradesh</option>
                         <option>West Bengal</option>
-                    </select><br><br>
-                    <input type="text" id="ref" name="ref" placeholder="Reference by"><br><br>
-                    <label>Borivali Branch:</label><br>
-                    <input type="radio" name="time" value="opts" required>08:00 AM - 09:00 AM (3 months 0 days)<br>
-                    <input type="radio" name="time" value="opts" required>11:00 AM - 01:00 AM (1 months 15 days)<br><!-- comment -->
-                    <input type="radio" name="time" value="opts" required>11:00 AM - 01:00 PM (1 months 15 days)<br><!-- comment -->
-                    <input type="radio" name="time" value="opts" required>09:00 AM - 10:00 AM (3 months 0 days)<br><!-- comment -->
-                    <input type="radio" name="time" value="opts" required>11:00 AM - 01:00 PM (1 months 15 days)<br><!-- comment -->
-                    <input type="radio" name="time" value="opts" required>09:00 AM - 10:00 AM (3 months 0 days)<br><br><!-- comment -->
-                    <label>Mulund Branch [Only for Sundays]:</label><br>
-                    <input type="radio" name="time" value="optss" required>10:30 AM - 01:30 PM (5 months 0 days)<br><!-- comment -->
-                    <input type="radio" name="time" value="optss" required>02:30 PM - 05:30 PM (5 months 0 days)<br><br><br><br><!-- comment -->
-                    <button type="submit">Submit</button>
-                    <div class="error" id="error">Please enter valid detail as mentioned</div>
+                    </select>
                 </div>
-                </pre>  
-            </form>
-        </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <input class="col-sm-12 mt-3 md_ad_form border-top-0 border-start-0 border-end-0 bg-transparent widt" type="text" id="ref" name="ref" placeholder="Reference by">
+                </div>
 
-        <script>
-            function checkform()
-            {
-                let isvalid=true;
-                const input1 = document.getElementById('fsn');
-                const input2 = document.getElementById('mdn');
-                const input3 = document.getElementById('lsn');
-                const input4 = document.getElementById('em');
-                const input5 = document.getElementById('wing');
-                const input6 = document.getElementById('bldg');
-                const input7 = document.getElementById('area');
-                const input8 = document.getElementById('city');
-                const input9 = document.getElementById('landmark');
-                
-                const num = document.getElementById('no');
-                const num1 = document.getElementById('pin');
-                
-                const error = document.getElementById('error');
-                const value = parseInt(input1.value);
-                const value1 = parseInt(input2.value);
-                const value2 = parseInt(input3.value);
-                const value3 = parseInt(input8.value);
-                if(value || value1 || value2 || value3 === isNan)
-                {
-                    error.style.display='none';
-                }
-                else{
-                    error.style.display='block';
-                    isvalid=false;
-                }
-                return isvalid;
-            }
-        </script>
+                <div class="col-lg-6">
+                    <input class="col-lg-12 border-1 mt-3 bg-transparent" type="file" placeholder="Upload your photo"><!-- comment -->
+                </div>
+            </div>
+
+
+            <div class="mt-3 mb-3 text-center">
+                <button type="submit" class="border border-dark rounded-pill col-lg-6 bg-white">Submit</button>
+            </div>
+            <div class="error fw-bold" id="error">* Please enter valid detail as mentioned.</div>
+
+
+        </form>
+
+
+
     </body>
 </html>
