@@ -4,125 +4,41 @@
     <head>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
-        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
         <title>opticalearn</title>
-        <style>
-            .container{
-                margin: 100px auto;
-                background: linear-gradient(30deg, deeppink, pink);
-                max-width: 700px;
-                padding: 50px;
-                box-shadow: 5px 5px 8px black;
-                
-            }
-
-            @media (min-width: 576px) and (max-width: 992px)
-            {
-                .flex-container{
-                    flex-direction: column;
-                    
-                }
-                
-                .flex-row{
-                    display: flex;
-                    flex-direction: row;
-                }
-                .md_ad_form{
-                    margin: 20px 20px 20px 0px;
-                    
-                }
-
-                .mb_ad_form{
-                    margin-bottom: 20px;
-                    
-                }
-
-                div+input{
-                    width: 100px;
-                    border: 100px;
-                }
-                
-                .widt{
-                    width: 100%;
-                }
-                
-                
-                }
-
-            
-
-            @media (min-width: 425px) and (max-width: 575px)
-            {
-               .widt
-               {
-                   width: 100%;
-               }
-               
-               .md_ad_form{
-                    margin: 20px 20px 20px 0px;
-                    
-                }
-
-                .mb_ad_form{
-                    margin-bottom: 20px;
-                    
-                }
-            }
-            
-            @
-            
-            
-            input{
-                outline: none;
-            }
-            
-            body{
-                background: linear-gradient(45deg, pink, deeppink);
-            }
-            
-            input::placeholder{
-                color: black;
-            }
-            
-            h2{
-                    overflow: hidden;
-                    
-                }
-            
-            
-
-        </style>
+        <link rel="stylesheet" href="opticalearn_css.css"/>
     </head>
     <body bgcolor="#a83264">
 
-        <form class="container" id="adform" onsubmit="return checkform();">
+        <form id="adform" onsubmit="return checkform();">
+            <div class="container">
             <div class="text-center">
                 <h2  class="display-5 border border-5 border-dark rounded-pill bg-white">Admission Form</h2>
             </div>
 
             <div class="row">
                 <div class="col-sm-3">
-                    <input class="flex-container md_ad_form border-top-0 border-start-0 border-end-0 col-sm-12 bg-transparent widt" type="text" id="fsn" name="fname " placeholder="First Name">
+                    <input class=" md_ad_form border-top-0 border-start-0 border-end-0 col-sm-12 bg-transparent widt" type="text" id="fsn" name="fname " placeholder="First Name">
                 </div>
 
                 <div class="col-sm-3">
-                    <input class="flex-container md_ad_form border-top-0 border-start-0 border-end-0 col-sm-12 bg-transparent widt" type="text" id="mdn" name="mname" placeholder="Middle Name">
+                    <input class="md_ad_form border-top-0 border-start-0 border-end-0 col-sm-12 bg-transparent widt" type="text" id="mdn" name="mname" placeholder="Middle Name">
                 </div>
 
                 <div class="col-sm-3">
-                    <input class="flex-container md_ad_form border-top-0 border-start-0 border-end-0 col-sm-12 bg-transparent widt" type="text" id="lsn" name="fname" placeholder="Last Name">
+                    <input class="md_ad_form border-top-0 border-start-0 border-end-0 col-sm-12 bg-transparent widt" type="text" id="lsn" name="fname" placeholder="Last Name">
                 </div>
 
                 <div class="col-sm-3">
-                    <input class="flex-container md_ad_form border-top-0 border-start-0 border-end-0 col-sm-12 bg-transparent widt" type="number" id="no" name="no" placeholder="Enter mobile no">
+                    <input class="md_ad_form border-top-0 border-start-0 border-end-0 col-sm-12 bg-transparent widt" type="number" id="no" name="no" placeholder="Enter mobile no">
                 </div>
             </div>
 
             <div class="row">
-                <div class="flex-row col-sm-6"> 
+                <div class="flex-row col-lg-6"> 
                     <input class="mt-3 col-sm-12 md_ad_form border-top-0 border-start-0 border-end-0 bg-transparent widt" type="text" id="em" name="em" placeholder=" Enter email address"><!--  -->
                 </div>
-                <div class="mt-3 col-sm-6">Select Gender:
+                <div class="mt-3 col-lg-6">Select Gender:
                     <br>
                     <span class="col-sm-1 mt-3 me-3">
                     <input type="radio" name="opt" value="male">Male
@@ -139,7 +55,7 @@
             </div>
 
             <div class="row mt-3">
-                <div class="col-lg-3 ">
+                <div class="col-lg-3">
                     <span class="mt-3 col-lg-12 auto">Education:</span><br>
 
                     <select id="edu" name="education"  class="col-sm-12 mb_ad_form bg-transparent widt" required>
@@ -302,9 +218,10 @@
                 <button type="submit" class="border border-dark rounded-pill col-lg-6 bg-white">Submit</button>
             </div>
             <div class="error fw-bold" id="error">* Please enter valid detail as mentioned.</div>
-
+            </div>
 
         </form>
+       
 
 
 

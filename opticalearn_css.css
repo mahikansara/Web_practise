@@ -1,0 +1,141 @@
+.container{
+                margin: 100px auto;
+                background: linear-gradient(30deg, deeppink, pink);
+                max-width: 700px;
+                padding: 50px;
+                box-shadow: 5px 5px 8px black;
+                padding-bottom: 5%;
+                
+            }
+            
+            @media (max-width: 1200) and (min-width: 993) and (orientation: portrait)
+            {
+                .container{
+                    margin-top: 10%;
+                    margin-bottom: 10%;
+                    width: 700px;
+                    margin: auto;
+                    
+                }
+                
+               .widt
+               {
+                   width: 100%;
+               }
+               
+               .md_ad_form{
+                    margin: 20px 20px 20px 0px;
+                    
+                }
+
+                .mb_ad_form{
+                    margin-bottom: 20px;
+                    
+                }
+            }
+
+            @media (min-width: 721px) and (max-width: 992px)
+            {
+                
+                
+                .flex-row{
+                    display: flex;
+                    flex-direction: row;
+                }
+                .md_ad_form{
+                    margin: 20px 20px 20px 0px;
+                 
+                    
+                }
+
+                .mb_ad_form{
+                    margin-bottom: 20px;
+                    
+                }
+                
+                .widt{
+                    width: 100%;
+                }
+                
+                .container{
+                    height: 100%;
+                    width: 600px;
+                    margin: auto;
+                }
+                
+                
+                }
+                
+                @media (min-width: 576px) and (max-width: 720px)
+            {
+                
+                
+                .flex-row{
+                    display: flex;
+                    flex-direction: row;
+                }
+                .md_ad_form{
+                    margin: 20px 20px 20px 0px;
+                    
+                }
+
+                .mb_ad_form{
+                    margin-bottom: 20px;
+                    
+                }
+                
+                .widt{
+                    width: 100%;
+                }
+                
+                .container{
+                    width: 450px;
+                    margin: auto;
+                }
+                
+                
+                }
+
+            
+
+            @media (min-width: 0px) and (max-width: 575px)
+            {
+                .container{
+                    width: 330px;
+                    margin: auto;
+                }
+                
+               .widt
+               {
+                   width: 100%;
+               }
+               
+               .md_ad_form{
+                    margin: 20px 20px 20px 0px;
+                    
+                }
+
+                .mb_ad_form{
+                    margin-bottom: 20px;
+                    
+                }
+            }
+
+            
+            
+            input{
+                outline: none;
+            }
+            
+            body{
+                background: linear-gradient(45deg, pink, deeppink);
+            }
+            
+            input::placeholder{
+                color: black;
+            }
+            
+            h2{
+                    overflow: hidden;
+                    
+                }
