@@ -1,141 +1,216 @@
 .container{
-                margin: 100px auto;
-                background: linear-gradient(30deg, deeppink, pink);
-                max-width: 700px;
-                padding: 50px;
-                box-shadow: 5px 5px 8px black;
-                padding-bottom: 5%;
-                
-            }
-            
-            @media (max-width: 1200) and (min-width: 993) and (orientation: portrait)
-            {
-                .container{
-                    margin-top: 10%;
-                    margin-bottom: 10%;
-                    width: 700px;
-                    margin: auto;
-                    
-                }
-                
-               .widt
-               {
-                   width: 100%;
-               }
-               
-               .md_ad_form{
-                    margin: 20px 20px 20px 0px;
-                    
-                }
+    margin: 100px auto;
+    background: linear-gradient(30deg, deeppink, pink);
+    max-width: 700px;
+    height: auto;
+    padding: 70px;
+    box-shadow: 5px 5px 8px black;
+    padding-bottom: 5%;
+    
+}
 
-                .mb_ad_form{
-                    margin-bottom: 20px;
-                    
-                }
-            }
+.upside-an{
+    position: relative; 
+    animation-duration: 3s;
+    animation-name: upside;
+}
 
-            @media (min-width: 721px) and (max-width: 992px)
-            {
-                
-                
-                .flex-row{
-                    display: flex;
-                    flex-direction: row;
-                }
-                .md_ad_form{
-                    margin: 20px 20px 20px 0px;
-                 
-                    
-                }
+@keyframes upside
+{
+    0% {left:0px; top:-200px;}
+    100% {left:0px; top:0px;}
+}
 
-                .mb_ad_form{
-                    margin-bottom: 20px;
-                    
-                }
-                
-                .widt{
-                    width: 100%;
-                }
-                
-                .container{
-                    height: 100%;
-                    width: 600px;
-                    margin: auto;
-                }
-                
-                
-                }
-                
-                @media (min-width: 576px) and (max-width: 720px)
-            {
-                
-                
-                .flex-row{
-                    display: flex;
-                    flex-direction: row;
-                }
-                .md_ad_form{
-                    margin: 20px 20px 20px 0px;
-                    
-                }
+.downside-an{
+    position: relative; 
+    animation-duration: 3s;
+    animation-name: downside;
+}
 
-                .mb_ad_form{
-                    margin-bottom: 20px;
-                    
-                }
-                
-                .widt{
-                    width: 100%;
-                }
-                
-                .container{
-                    width: 450px;
-                    margin: auto;
-                }
-                
-                
-                }
+@keyframes downside
+{
+    0% {left:0px; top:200px;}
+    100% {left:0px; top:0px;}
+}
 
-            
+.right-an{
+    position: relative; 
+    animation-duration: 3s;
+    animation-name: rightside;
+}
 
-            @media (min-width: 0px) and (max-width: 575px)
-            {
-                .container{
-                    width: 330px;
-                    margin: auto;
-                }
-                
-               .widt
-               {
-                   width: 100%;
-               }
-               
-               .md_ad_form{
-                    margin: 20px 20px 20px 0px;
-                    
-                }
+@keyframes rightside
+{
+    0% {left:1000px; top:0px;}
+    100% {left:0px; top:0px;}
+}
 
-                .mb_ad_form{
-                    margin-bottom: 20px;
-                    
-                }
-            }
+.left-an{
+    position: relative; 
+    animation-duration: 3s;
+    animation-name: leftside;
+}
 
-            
-            
-            input{
-                outline: none;
-            }
-            
-            body{
-                background: linear-gradient(45deg, pink, deeppink);
-            }
-            
-            input::placeholder{
-                color: black;
-            }
-            
-            h2{
-                    overflow: hidden;
-                    
-                }
+@keyframes leftside
+{
+    0% {left:-1000px; top:0px;}
+    100% {left:0px; top:0px;}
+}
+
+.blink{
+    animation-name: blinker;
+    animation-duration: 0.6s;
+    animation-iteration-count: infinite;
+    color: red;
+}
+
+
+@keyframes blinker
+{
+    from{opacity: 1.0;}
+    to{opacity: 0.5;}
+}
+
+
+.inputclass{
+    outline: none;      
+}
+.bodyclass
+{
+    background: linear-gradient(45deg, pink, deeppink);
+}
+.inputt::placeholder{
+    color: black;
+}
+.h2class{
+    overflow: hidden;
+    width: 100%;
+    
+}
+
+#err{
+    animation-name: blinker;
+    animation-duration: 2s;
+}
+
+
+.boun{
+    animation: bounce .5s infinite;
+}
+
+@keyframes bounce
+{
+    to {transform: scale(1.2);}
+}
+
+@media (max-width: 1200) and (min-width: 993) and (orientation: portrait)
+{
+    .container{
+        margin-top: 10%;
+        margin-bottom: 10%;
+        width: 700px;
+        margin: auto;
+    }
+
+    .widt
+    {
+        width: 100%;
+    }
+
+    .md_ad_form{
+        margin: 20px 20px 20px 0px;
+
+    }
+
+    .mb_ad_form{
+        margin-bottom: 20px;
+
+    }
+
+}
+
+@media (min-width: 721px) and (max-width: 992px)
+{
+
+
+    .flex-row{
+        display: flex;
+        flex-direction: row;
+    }
+    .md_ad_form{
+        margin: 20px 20px 20px 0px;
+
+
+    }
+
+    .mb_ad_form{
+        margin-bottom: 20px;
+
+    }
+
+    .widt{
+        width: 100%;
+    }
+
+    .container{
+        height: 100%;
+        width: 600px;
+        margin: auto;
+        transition: width 2s, height 4s;
+    }
+}
+@media (min-width: 576px) and (max-width: 720px)
+{
+
+
+    .flex-row{
+        display: flex;
+        flex-direction: row;
+    }
+    .md_ad_form{
+        margin: 20px 20px 20px 0px;
+
+    }
+
+    .mb_ad_form{
+        margin-bottom: 20px;
+
+    }
+
+    .widt{
+        width: 100%;
+    }
+
+    .container{
+        width: 450px;
+        margin: auto;
+        transition: width 2s, height 4s;
+    }
+
+    
+}
+@media (min-width: 0px) and (max-width: 575px)
+{
+    .container{
+        width: 330px;
+        margin: auto;
+        transition: width 2s, height 4s;
+    }
+
+    .widt
+    {
+        width: 100%;
+    }
+
+    .md_ad_form{
+        margin: 20px 20px 20px 0px;
+
+    }
+
+    .mb_ad_form{
+        margin-bottom: 20px;
+
+    }
+    
+
+}

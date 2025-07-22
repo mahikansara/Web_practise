@@ -1,0 +1,71 @@
+.boody{
+    background:linear-gradient(45deg,#54574e,#23261f);
+}
+.container{
+    box-shadow: 5px 5px 8px black;
+    margin: 50px auto;
+    max-width: 553px;
+    background: #a9b594;
+    padding: 50px;
+}
+input{
+    outline: none;
+}
+input::placeholder,b{
+    color: black;
+}
+@media (min-width: 0px) and (max-width: 575px)
+{
+
+    .container{
+        width: 350px;
+        margin: auto;
+    }
+
+    .wid{
+        width: 100%;
+    }
+
+    .md_ad_form{
+        margin: 20px 0px 0px 0px;
+    }
+
+    .mb_a_form{
+        margin-bottom: 20px;
+    }
+
+    h2{
+        overflow: hidden;
+    }
+}
+@media (min-width: 576px) and (max-width: 799px)
+{
+    .container{
+        max-width: 1000px;
+        width: 52%;
+        margin: auto;
+    }
+
+    .wid{
+        width: 100%;
+    }
+
+    .md_ad_form{
+        margin: 0px 0px 20px 0px;
+    }
+
+    .mb_a_form{
+        margin-bottom: 20px;
+    }
+
+}
+.error-design{
+    display: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+    padding: 2px;
+    margin-top: 5px;
+    width: fit-content;
+}
+
