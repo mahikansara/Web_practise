@@ -4,18 +4,24 @@
         <title>details</title>
     </head>
     <style>
-/*        @media (max-width: )*/
+       @media (max-width: 460px)
+       {
+           table{
+               width: 100%;
+               overflow: hidden;
+           }
+           th,td,tr{
+               display: block;
+           }
+       }
     </style>
+    
     <body>
+        <form action="single_details.php" method="POST">
         <?php
 class Accep_data {
 
     public $localhost, $dbname, $conn, $query, $result, $row;
-    
-    function moredata()
-    {
-        
-    }
 
     function fetch_data() {
         $this->localhost = "127.0.0.1";             //server IP address
@@ -30,7 +36,7 @@ class Accep_data {
         {
                 echo '<table border=2 align=center><tr><th>Name</th><th>Contact</th><th>Email</th><th>Details</th></tr>';
             while ($row = $this->result->fetch( PDO::FETCH_ASSOC)){       //fetch each row as column name as key
-                echo '<tr><td>'. $row["fname"]. ' '. $row["mname"].' '. $row["lname"].'</td><td>'  . ''. $row["mob"].'</td><td>'  .''. $row["email"].'</td><td><button onclick="moredata()">More Details</button></tr>';
+                echo '<tr><td>'. $row["fname"]. ' '. $row["mname"].' '. $row["lname"].'</td><td>'  . ''. $row["mob"].'</td><td>'  .''. $row["email"].'</td><td><button onclick='.'fetchdata('.$row['roll_no'].') id='.'onedata'.'>More Details</button></tr>';
             }
             echo "</table>";
         } else {
@@ -47,6 +53,7 @@ $accept_data = new Accep_data();
 $accept_data->fetch_data();
 //$accept_data->displaynames();
 ?>
+        </form>
     </body>
 </html>
 
