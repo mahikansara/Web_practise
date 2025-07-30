@@ -1,3 +1,16 @@
+<!doctype html>
+<html>
+    <head>
+        <title>thankyou</title>
+    </head>
+    <body>
+        <div>
+            
+        </div>
+    </body>
+</html>
+
+
 <?php
 
 class Accept_data {
@@ -5,8 +18,8 @@ class Accept_data {
     public $fname, $mname, $lname, $num, $em, $gend, $edu, $lan, $per, $pass;
     public $wing, $bldg, $area, $city, $land, $pin, $dob, $bg, $coun, $state, $ref;
     public $localhost, $dbname, $conn, $query;
-
-    function upload_data() {
+    public $target_dir, $target_file, $uploadOk, $imgfiletype, $check, $sanitize_name, $sanitize_email;
+        function upload_data() {
         $this->localhost = "127.0.0.1";
         $this->dbname = "stu_data";
         try {
@@ -43,6 +56,65 @@ class Accept_data {
             $this->coun = empty(filter_input(INPUT_POST, 'coun', FILTER_SANITIZE_STRING)) ? "NOT DEFINED" : (filter_input(INPUT_POST, 'coun', FILTER_SANITIZE_SPECIAL_CHARS));
             $this->state = empty(filter_input(INPUT_POST, 'state', FILTER_SANITIZE_STRING)) ? "NOT DEFINED" : (filter_input(INPUT_POST, 'state', FILTER_SANITIZE_SPECIAL_CHARS));
             $this->ref = empty(filter_input(INPUT_POST, 'ref', FILTER_SANITIZE_SPECIAL_CHARS)) ? "NOT DEFINED" : (filter_input(INPUT_POST, 'ref', FILTER_SANITIZE_SPECIAL_CHARS));
+        }
+    }
+    
+    function uploadphoto()
+    {
+        if($_SERVER['REQUEST_METHOD'] == 'POST')
+        {
+        $this->target_dir = "uploads/";
+        $this->target_file = $this->target_dir.basename($_FILES["filesend"]["name"]);
+        $this->sanitize_name = $_FILES["filesend"]["name"];
+        $this->sanitize_email = str_replace(['@','.'], '_', $this->em);
+        $uploadOk = 1;
+        $imgfiletype = strtolower(pathinfo($this->target_file, PATHINFO_EXTENSION));
+        $this->newname = $this->sanitize_email.'.'.$imgfiletype;
+        if(isset($_POST["submit"]))
+        {
+            $check = getimagesize($_FILES["filesend"]["tmp_name"]);
+            if($check !== false)
+            {
+                echo "File is an image - ".$check["mime"].".";  
+                $uploadOk = 1;
+            }
+        else {
+                echo "File is not an image";
+                $uploadOk = 0;
+        }
+        }
+        
+        if(file_exists($this->newname))
+        {
+            echo "File already exists";
+            $uploadOk = 0;
+        }
+        
+        if($_FILES["filesend"]["size"] > 100000)
+        {
+            echo "Your file is too large"; 
+            $uploadOk = 0;
+        }
+        
+        if($imgfiletype!="jpg" && $imgfiletype!="jpeg" && $imgfiletype!="png")
+        {
+            echo "Please get correct file extension";
+            $uploadOk = 0;
+        }
+        
+        if($uploadOk == 0)
+        {
+            echo "Sorry your file is not uploaded";
+        } else {
+            if(move_uploaded_file($_FILES["filesend"]["tmp_name"], $this->target_file))
+            {
+                 echo "The file ". htmlspecialchars( basename( $_FILES["filesend"]["name"])). " has been uploaded.";
+            } else {
+                echo "Sorry, there was an error in uploading your file.";
+            }
+        }
+//        mkdir($this->target_dir, 0755, true);
+//        echo basename($_FILES["filesend"]["name"]);
         }
     }
 
@@ -88,12 +160,16 @@ class Accept_data {
         echo $this->state;
         echo '<br>';
         echo $this->ref;
+        echo '<br>';
     }
+    
+    
 }
 
 $acpt_data = new Accept_data();
+$acpt_data->upload_data();
 $acpt_data->read_data();
 $acpt_data->display();
-$acpt_data->upload_data();
+$acpt_data->uploadphoto();
 ?>
 

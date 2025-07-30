@@ -13,7 +13,7 @@
     </head>
     <body class="bodyclass">
 
-        <form id="adform" onsubmit="return testerror();" action="process_admission_form.php" method="post" enctype="application/x-www-form-urlencoded">
+        <form id="adform" onsubmit="return testerror();" action="process_admission_form.php" method="post" enctype="multipart/form-data">
             <div class="container">  
 
                 <div class="text-center upside-an">
@@ -237,7 +237,7 @@
                     </div>
 
                     <div class="col-lg-6 right-an">
-                        <input class="focus-error inputclass col-lg-12 border-1 mt-3 bg-transparent" type="file" id="fle" accept=".jpg, .jpeg, .png"><!-- comment -->
+                        <input class="focus-error inputclass col-lg-12 border-1 mt-3 bg-transparent" type="file" id="fle" accept=".jpg, .jpeg, .png" name="filesend"><!-- comment -->
                         <div id=filerror" class="blink"></div>
                     </div>
                 </div>

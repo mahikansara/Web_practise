@@ -89,6 +89,34 @@ function testerror()
             $(this).next().css('display', 'none');
         }
         }
+        
+        if ($(this).attr('id') === 'fle')
+        {
+            const max = this.files[0].size;
+            const maxsize = 100000;
+            const ext = this.files[0];
+            const f_ext = ext.name;
+            const filextension = f_ext.split('.').pop().toLowerCase();
+            alert(filextension);
+            const allowedext = ['jpg','jpeg','png'];
+            if(max > maxsize)
+            {
+                const mess = 'Please exceeds the limit of file';
+                    $(this).next().text(mess);
+                    $(this).next().css('display', 'block');
+                    $(this).next().focus();
+                    isvalid = false;
+            }
+            
+            if(!(allowedext.includes(filextension)))
+            {
+                const mess = 'Only few extensions are valid';
+                    $(this).next().text(mess);
+                    $(this).next().css('display', 'block');
+                    $(this).next().focus();
+                    isvalid = false;
+            }
+        }
     });
 
     $("select").each(function (index, element) {

@@ -5,10 +5,8 @@ class Single_detail{
     function single_data() {
         $this->localhost = "127.0.0.1";             //server IP address
         $this->dbname = "stu_data";
-        if(($_SERVER["REQUEST_METHOD"] == "POST"){
-            if(isset($_POST['roll_no']))
-            {
-               $this->roll = $_GET['roll_no'];
+        if($_SERVER["REQUEST_METHOD"] == "POST"){
+            
             try{
             $this->datapdo = new PDO("mysql:host=$this->localhost;dbname=$this->dbname;","root","mahi171006");      //create object for connection
             $this->datapdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);            //error message
@@ -18,7 +16,7 @@ class Single_detail{
             } catch (Exception $ex) {
                 echo $ex;
         } 
-            }
+            
             
         }
         
